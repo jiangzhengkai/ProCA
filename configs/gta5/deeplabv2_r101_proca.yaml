@@ -1,0 +1,30 @@
+MODEL:
+  NAME: "deeplab_resnet101"
+  WEIGHTS: "https://download.pytorch.org/models/resnet101-5d3b4d8f.pth"
+  FREEZE_BN: False
+  THRESHOLD_PERCENT: 0.6
+DATASETS:
+  SOURCE_TRAIN: "gtav_train"
+  TARGET_TRAIN: "cityscapes_train"
+  TEST: "cityscapes_val"
+INPUT:
+  SOURCE_INPUT_SIZE_TRAIN: (1280, 720)
+  INPUT_SIZE_TEST: (1024, 512)
+  BRIGHTNESS: 0.5
+  CONTRAST: 0.5
+  SATURATION: 0.5
+  HUE: 0.2
+  RANDOMAPPLY: 1.0
+  GRAYSCALE: 0.2
+  GAUSSIANBLUR: True
+SOLVER:
+  MULTI_LEVEL: True
+  BASE_LR: 2.5e-4
+  BASE_LR_D: 0.0001
+  MAX_ITER: 90000
+  STOP_ITER: 90000
+  BATCH_SIZE: 8
+  DELTA: 0.9
+  LAMBDA_LOV: 0.75
+  LAMBDA_FEAT: 1.0
+  LAMBDA_OUT: 1.0
