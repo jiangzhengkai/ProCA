@@ -101,7 +101,7 @@ multi-scale testing results should preduce [result](./docs/gtav2cityscape.png)
 ```
 bash run_proca_resnet101_gta5.sh
 ```
-We also provide Memory-Bank implementation which can be seen in [memory_bank](train_memory_bank.py)
+We also provide Memory-Bank implementation which can be seen in [train_memory_bank](train_memory_bank.py).
 
 ## Acknowledgements
 This code is partly based on the open-source implementations from [FADA](https://github.com/JDAI-CV/FADA) and [SDCA](https://github.com/BIT-DA/SDCA).
