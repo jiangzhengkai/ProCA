@@ -71,7 +71,7 @@ python3 datasets/generate_gtav_label_info.py -d datasets/gtav -o datasets/gtav/
     <b>(1) SYNTHIA -> Cityscapes</b>
   </summary>
 
-Download the [pretrained model (ResNet-101)](https://pan.baidu.com/s/1o63hJ6cv0w0H3i4WgdRERQ) (52.0 mIoU of single scale, extraction code:3e9h ) and save it in `results/`. Then run the command 
+Download the [pretrained model (ResNet-101)](https://pan.baidu.com/s/1o63hJ6cv0w0H3i4WgdRERQ) (52.0 mIoU of single scale, extraction code:3e9h) or [Google Drive](https://drive.google.com/file/d/1iA-cPM0K7aIg_3tpzX43jf3kBP2XyJf8/view?usp=share_link) and save it in `results/`. Then run the command 
 ```bash
 python test.py -cfg configs/deeplabv2_r101_ssl_synthia.yaml resume results/model_proca_ssl.pth
 ```
@@ -86,7 +86,7 @@ multi-scale testing results should preduce [result](./docs/synthia2cityscape.png
     <b>(2) GTAV -> Cityscapes</b>
   </summary>
 
-Download the [pretrained model (ResNet-101)](https://pan.baidu.com/s/1FMnPF9Tc-ubecXl0r7-5eQ) (55.1 mIoU of sinle scale, extraction code: f2ve) and save it in `results/`. Then run the command 
+Download the [pretrained model (ResNet-101)](https://pan.baidu.com/s/1FMnPF9Tc-ubecXl0r7-5eQ) (55.1 mIoU of sinle scale, extraction code: f2ve) or [Google Drive](https://drive.google.com/file/d/1xHDN7bptgUAKrHu05I4-1lo9hx_7ms1r/view?usp=share_link) and save it in `results/`. Then run the command 
 ```bash
 python test.py -cfg configs/deeplabv2_r101_ssl.yaml resume results/model_proca_ssl.pth
 ```
